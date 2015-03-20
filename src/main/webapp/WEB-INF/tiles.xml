@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	<definition name="abstractTemplateforSubPage" template="/jsp/common/template_ajax.jsp"></definition>
+	<!-- LOGIN PAGE -->
+	<definition name="login.tile"  template="/jsp/common/base.jsp">
+		<put-attribute name="title" value="MASS - Login" />
+		<put-attribute name="body" value="/jsp/common/login.jsp" />
+			<put-list-attribute name="stylesInherit">
+			<add-attribute value="/style/font-awesome.css" />
+			<add-attribute value="/style/bootstrap.min.css" />
+			<add-attribute value="/style/bootstrap-responsive.css" />
+			<add-attribute value="/style/login.css" />
+		</put-list-attribute>
+			<put-list-attribute name="favicon">
+			<add-attribute value="/image/icons/favicon.ico" />
+		</put-list-attribute>
+		<put-list-attribute name="styles" />
+		<put-list-attribute name="scriptsInherit">
+			<add-attribute value="/script/jquery.js" />
+			<add-attribute value="/script/html5shiv.js" />
+			<add-attribute value="/script/respond.min.js" />
+			<add-attribute value="/script/bootstrap.min.js" />
+		</put-list-attribute>
+		<put-list-attribute name="scripts" />
+		<put-list-attribute name="scripts" inherit="true">
+			<add-attribute value="/script/mass-cookie.js" />
+			<add-attribute value="/script/login.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="mass.template" template="/jsp/common/main.jsp">
+		<put-attribute name="title" value="MASS" />
+		<put-attribute name="header" value="/jsp/common/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
+		<put-list-attribute name="stylesInherit">
+			<add-attribute value="/style/font-awesome.css" />
+			<add-attribute value="/style/bootstrap.min.css" />
+			<add-attribute value="/style/bootstrap-responsive.css" />
+			<add-attribute value="/style/mass.css" />
+		</put-list-attribute>
+		<put-list-attribute name="favicon">
+			<add-attribute value="/image/icons/favicon.ico" />
+		</put-list-attribute>
+		<put-list-attribute name="styles" />
+		<put-list-attribute name="scriptsInherit">
+			<add-attribute value="/script/html5shiv.js" />
+			<add-attribute value="/script/respond.min.js" />
+			<add-attribute value="/script/bootstrap.min.js" />
+			<add-attribute value="/script/enscroll-0.6.0.min.js" />
+			
+			<add-attribute value="/script/jquery.i18n.properties-min-1.0.9.js" />
+			<add-attribute value="/script/mass.js" />
+			
+			<add-attribute value="/script/commons.js" />
+			<add-attribute value="/script/bootstrap-growl.js" />
+			<add-attribute value="/script/jquery.sticky.js" />
+		</put-list-attribute>
+		<put-list-attribute name="scripts" />
+	</definition>
+	<!-- HOME PAGE -->
+	<definition name="home.index.tile" extends="mass.template">
+		<put-attribute name="body" value="/jsp/home/index.jsp" />
+	</definition>
+	<!--  -->
+	<definition name="orderEntry.tile" extends="mass.template">
+		<put-attribute name="title" value="MASS - Order Entry" />
+		<put-attribute name="body" value="/jsp/OrderEntry/OrderEntry.jsp" />
+		<put-list-attribute name="styles" inherit="true">
+			<add-attribute value="/style/daterangepicker.css" />
+			<add-attribute value="/style/bootstrap-select.min.css" />			
+			<add-attribute value="/style/jquery-ui/jquery.ui.autocomplete.css" />
+			<add-attribute value="/style/jquery-ui/jquery.ui.menu.css" />			
+			<add-attribute value="/style/override-datatable-common.css" />
+			<add-attribute value="/style/chosen.css" />
+		</put-list-attribute>
+		<put-list-attribute name="scripts" inherit="true">
+		    <add-attribute value="/script/moment.js" />
+			<add-attribute value="/script/bootstrap-select.js" />
+			<add-attribute value="/script/daterangepicker.js" />
+			<add-attribute value="/script/jquery-ui/jquery.ui.widget.js" />
+			<add-attribute value="/script/jquery.event.drag-2.2.js" />
+			<add-attribute value="/script/jquery.event.drop-2.2.js" />
+			<add-attribute value="/script/jquery-ui/jquery.ui.core.js" />
+			<add-attribute value="/script/jquery-ui/jquery.ui.position.js" />
+			<add-attribute value="/script/jquery-ui/jquery.ui.menu.js" />
+			<add-attribute value="/script/jquery-ui/jquery.ui.autocomplete.js" />
+			<add-attribute value="/script/jquery.dataTables.js" />	
+			<!--<add-attribute value="/script/bootstrap-contextmenu.js" />-->
+			<add-attribute value="/script/chosen.jquery.js" />			
+			<add-attribute value="/script/mass-cookie.js" />
+
+		</put-list-attribute>
+	</definition>
+	<!-- IMPORT CANADA ORDER -->
+	<definition name="importCanadaOrder.tile" extends="mass.template">
+		<put-attribute name="title" value="Import Canana Order"></put-attribute>
+		<put-attribute name="body" value="/jsp/order-import/canadaorder.jsp">
+		</put-attribute>
+		<put-list-attribute name="styles" inherit="true">
+			<add-attribute value="/style/daterangepicker.css" />
+		</put-list-attribute>
+		<put-list-attribute name="scripts" inherit="true">
+		    <add-attribute value="/script/moment.js" />
+		</put-list-attribute>
+	</definition>
+</tiles-definitions>
