@@ -91,19 +91,6 @@
 			<!--<add-attribute value="/script/bootstrap-contextmenu.js" />-->
 			<add-attribute value="/script/chosen.jquery.js" />			
 			<add-attribute value="/script/mass-cookie.js" />
-
-		</put-list-attribute>
-	</definition>
-	<!-- IMPORT CANADA ORDER -->
-	<definition name="importCanadaOrder.tile" extends="mass.template">
-		<put-attribute name="title" value="Import Canana Order"></put-attribute>
-		<put-attribute name="body" value="/jsp/order-import/canadaorder.jsp">
-		</put-attribute>
-		<put-list-attribute name="styles" inherit="true">
-			<add-attribute value="/style/daterangepicker.css" />
-		</put-list-attribute>
-		<put-list-attribute name="scripts" inherit="true">
-		    <add-attribute value="/script/moment.js" />
 		</put-list-attribute>
 	</definition>
 </tiles-definitions>

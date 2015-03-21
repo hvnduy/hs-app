@@ -15,24 +15,6 @@
 	<context:annotation-config />
 	<!-- <context:component-scan base-package="com.hs.mapp.ws" /> -->
 	<context:component-scan base-package="com.hs.mapp.*" />
-
-	<!-- Jdbc Template -->
-	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-		<property name="dataSource" ref="dataSource"></property>
-	</bean>
-	<bean
-		class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate"
-		id="namedParameterJdbcTemplate">
-		<constructor-arg ref="dataSource" />
-	</bean>
-	<bean id="dataSource"
-		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-
-		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://127.4.71.130:3306/mobileapp" />
-		<property name="username" value="mobileapp" />
-		<property name="password" value="150419900Zz" />
-	</bean>
 	<bean id="gson" class="com.google.gson.Gson"></bean>
 	<context:property-placeholder location="classpath:dev/application.properties"
 		order="1" ignore-unresolvable="true" />
