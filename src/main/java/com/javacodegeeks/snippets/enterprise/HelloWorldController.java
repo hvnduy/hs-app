@@ -10,16 +10,22 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/helloWorld")
 public class HelloWorldController {
 
-		@RequestMapping(value = "/hello", method = RequestMethod.GET)
-		public String hello(ModelMap model) {
-			model.addAttribute("msg", "JCG Hello World!");
-			return "helloWorld";
-		}
-		
-		@RequestMapping(value = "/displayMessage/{msg}", method = RequestMethod.GET)
-		public String displayMessage(@PathVariable String msg, ModelMap model) {
-			model.addAttribute("msg", msg);
-			return "helloWorld";
-		}
-		
+	@RequestMapping(value = "/hello", method = RequestMethod.GET)
+	public String hello(ModelMap model) {
+		model.addAttribute("msg", "JCG Hello World!");
+		// return "helloWorld";
+		return "employeesList";
 	}
+
+	@RequestMapping(value = "/displayMessage/{msg}", method = RequestMethod.GET)
+	public String displayMessage(@PathVariable String msg, ModelMap model) {
+		model.addAttribute("msg", msg);
+		return "helloWorld";
+	}
+
+	@RequestMapping("/welcome")
+	public String welcome() {
+		return "welcome";
+	}
+
+}
