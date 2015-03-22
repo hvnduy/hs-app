@@ -14,20 +14,16 @@
 			<add-attribute value="/style/font-awesome.css" />
 			<add-attribute value="/style/bootstrap.min.css" />
 			<add-attribute value="/style/bootstrap-responsive.css" />
-<!-- 			<add-attribute value="/style/mass.css" /> -->
 		</put-list-attribute>
 		<put-list-attribute name="favicon">
 			<add-attribute value="/image/icons/favicon.ico" />
 		</put-list-attribute>
-		<put-list-attribute name="styles" />
 		<put-list-attribute name="scriptsInherit">
 			<add-attribute value="/script/html5shiv.js" />
 			<add-attribute value="/script/respond.min.js" />
 			<add-attribute value="/script/bootstrap.min.js" />
 			<add-attribute value="/script/enscroll-0.6.0.min.js" />
-
 			<add-attribute value="/script/jquery.i18n.properties-min-1.0.9.js" />
-	<!-- <add-attribute value="/script/mass.js" /> -->
 
 			<add-attribute value="/script/commons.js" />
 			<add-attribute value="/script/bootstrap-growl.js" />
