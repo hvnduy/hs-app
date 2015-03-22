@@ -46,6 +46,30 @@
 </style>
 </head>
 <body>
+
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id))
+				return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	
+	<tiles:insertAttribute name="header" />
+	<section id="ccr-main-section">
+	<div class="container">
+		<tiles:insertAttribute name="leftSection" />
+		<tiles:insertAttribute name="rightSection" />
+	</div><!-- /.container -->
+	</section><!-- / #ccr-main-section -->
+	<tiles:insertAttribute name="footerSidebar" />
+	<tiles:insertAttribute name="footer" />
+
 	<tiles:importAttribute name="scriptsInherit" />
 	<c:forEach items="${scriptsInherit}" var="script">
 		<script type="text/javascript" src="<c:url value='${script}' />"></script>
@@ -57,25 +81,5 @@
 	<script type="text/javascript">
 		
 	</script>
-	<table border="1" style="border-collapse: collapse;" cellpadding="2"
-		cellspacing="2" align="center" width="800">
-		<tbody>
-			<tr>
-				<td height="30" colspan="2"><tiles:insertAttribute
-						name="header" /></td>
-			</tr>
-			<tr>
-				<td width="150" height="450" valign="top"><tiles:insertAttribute
-						name="navigation" /></td>
-				<td valign="top" width="650"><tiles:insertAttribute name="body" />
-
-				</td>
-			</tr>
-			<tr>
-				<td height="30" colspan="2"><tiles:insertAttribute
-						name="footer" /></td>
-			</tr>
-		</tbody>
-	</table>
 </body>
 </html>
