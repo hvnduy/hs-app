@@ -1,0 +1,154 @@
+html {
+	background-image: url(../image/login_pattern.png);
+	/*background-color: #f4f4f4;*/
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-image: url(../image/login_pattern.png);
+	/*background: #434E75;*/
+	bottom;
+	/* 	background-attachment: fixed;	 */
+}
+
+.container-fluid {
+	padding: 0px;
+}
+
+#container {
+	position: relative;
+}
+
+.message {
+	min-height: 80px;
+	overflow: hidden;
+	width: 600px;
+	margin: 10px auto;
+}
+
+.err-message {
+	min-height: 80px;
+	overflow: hidden;
+	width: 600px;
+	margin: 10px auto;
+	color: #ff0000;
+}
+
+.login-header {
+	content: url(../image/logo.png);
+	width: 500px;
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	max-height: 100px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.login-fm {
+	background: #DB5031;
+	width: 500px;
+	height: 400px;
+	overflow: hidden;
+	border-radius: 15px;
+	margin: 0 auto;
+}
+
+.form-signin .form-signin-heading, .form-signin .checkbox {
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+.form-signin .welcome-heading {
+	border-bottom: 2px solid #FF9B86;
+	padding-bottom: 7px;
+	font-size: 21px;
+	margin-bottom: 15px;
+	color: white;
+}
+
+.footer-login {
+	height: 2em;
+	color: #475178;
+	font-size: 16px;
+	width: 100%;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.form-signin {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.form-signin .form-control {
+	position: relative;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.btn-login {
+	color: #fff;
+	background-color: #FF9B86;
+	border-color: #fff;
+	border-right-color: #fff;
+	border-width: 2px;
+	font-size: 20px;
+}
+
+.btn:hover, .btn:focus {
+	color: #fff;
+}
+
+.username {
+	background: url(../image/icons/user_icon.png) no-repeat right;
+}
+
+.password {
+	background: url(../image/icons/key_icon.png) no-repeat right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* unvisited link */
+a:link {
+	color: #633996;
+}
+
+/* visited link */
+a:visited {
+	color: #633996;
+}
+
+/* mouse over link */
+a:hover {
+	color: #2580C6;
+}
+
+/* selected link */
+a:active {
+	color: #0000FF;
+}
